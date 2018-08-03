@@ -1,6 +1,6 @@
 {
   "name": "ghost-s3-file-storage",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
