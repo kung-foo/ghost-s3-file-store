@@ -58,7 +58,7 @@ class S3Adapter extends BaseAdapter {
     
             console.log("s3-file-store putObject", image, this._config.bucket, targetKey);
     
-            this._s3Client.putObject({ Bucket: this._config.bucket, Key: targetKey, Body: stream }, function(error, data) {
+            this._s3Client.putObject({ Bucket: this._config.bucket, Key: targetKey, Body: stream, ContentType: image.type }, function(error, data) {
                 if(error) {
                     reject(error);
                 } else {
